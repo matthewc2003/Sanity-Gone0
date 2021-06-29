@@ -1,0 +1,11 @@
+.stats{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+    grid-area: stats;
+    display: grid;
+    grid: "hp def mres rdp" 50px
+          "atk int blk dp" 50px /
+          106px 106px 106px 106px;
+}

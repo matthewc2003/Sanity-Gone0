@@ -1,0 +1,274 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    background-color: #1A1A1A;
+}
+body{
+    display: grid;
+    grid:   "header header header" 320px
+            " . . . "              24px
+            "nav    main   aside " auto
+            "footer footer footer" min-content /
+            540px 1fr 325px;
+}
+header{
+    grid-area: header;
+    background-image: url('header.png');
+    z-index: 1;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid: "ihead" 40px
+          "ihr"   min-content
+          " . "   24px
+          "info" 380px
+          " . "   32px
+          "itext" min-content 
+          " . "   64px
+          "talents" min-content 
+          /
+          1fr;
+}
+
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+.ihead{
+    grid-area: ihead;
+    display: grid;
+    grid: "intro introicon" 1fr /
+          1fr 1fr;
+}
+.intro{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 24px;
+    color: #898989;
+}
+.introicon{
+    display: grid;
+    grid: "union e290 trust" min-content /
+            1fr min-content 40px;
+    justify-items: end;
+}
+.e290, .trust{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    align-self: end;
+    vertical-align: text-top;
+}
+.union{
+    background-image: url('union.png'); 
+    z-index: 1;
+    height: 15px;
+    width: 13px;
+    margin-top: 6px;
+
+}
+.ihr{
+    grid-area: ihr;
+    border-top: 1px #333333;
+    z-index: 1;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.info{
+    grid-area: info;
+    display: grid;
+    grid: "name trait" 200px
+          "srange srange" 1fr /
+          640px 1fr;
+}
+.name{
+    background-color: #151515;
+    grid-area: name;
+    display: grid;
+    grid: ""
+
+}
+.trait{
+    grid-area: trait;
+    background-color: #1F1F1F;
+}
+.srange{
+    grid-area: srange;
+    background-color: #262626; 
+    display: grid;
+    grid: "stats range" 1fr /
+            1fr 292px;
+    
+}
+.stats{
+    grid-column-gap: 96px;
+    grid-row-gap: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+    grid-area: stats;
+    display: grid;
+    grid: "hp def mres rdp" 50px
+          "atk int blk dp" 50px /
+          106px 106px 106px 106px;
+}
+.range{
+    grid-area: range;
+}
+.statname{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+    
+    align-items: center;
+
+    /* text / light gray */
+
+    color: #898989;
+    position: relative;
+    width: 88px;
+    left: 18px;
+    bottom:10px
+}
+.val{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    display: inline-block;
+    align-items: center;
+    color: #F2F2F2;
+    z-index: 2;
+    position: relative;
+    top: -6px;
+}
+.staticon{
+    position: relative;
+    height: 10px;
+    width: 10px;
+    z-index: auto;
+    top: 4px;
+}
+.infotitle{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #898989;
+
+}
+.classicon{
+    background-color: white;
+    margin: 24px;
+    margin-top: 32px;
+    position: relative;
+    height: 64px;
+    width: 64px;
+    z-index: auto;
+}
+.rarity{
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 112px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 24px;
+    /* identical to box height, or 50% */
+    color: #F2F2F2;
+}
+.position{
+    margin-top: 120px;
+    margin-left: 24px;
+    position: absolute;
+}
+.pos, .type, .trait-title{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #898989;
+}
+.place{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #F2F2F2;
+    margin-top: 6px;
+}
+.dmgtype{
+    margin-top: 120px;
+    margin-left: 226px;
+    position: absolute;
+}
+.phys{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #49B3FF;
+    margin-top: 6px;
+}
+.traits{
+    margin-top: 32px;
+    margin-left: 24px;
+    position: absolute;
+}
+.trait-val{
+    margin-top: 8px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #49B3FF;
+}
+.itext{
+    grid-area: itext;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+
+    /* text / white */
+
+    color: #F2F2F2;
+}
+.talents{
+    grid-area: talents;
+}
+#nav-home-tab, #nav-profile-tab{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+#override{
+    border: none;
+}
