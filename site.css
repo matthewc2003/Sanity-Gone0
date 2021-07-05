@@ -30,6 +30,10 @@ main{
           "itext" min-content 
           " . "   64px
           "talents" min-content 
+          " . "   64px
+          "skills" min-content
+          " . "   64px 
+          "synergy"min-content
           /
           1fr;
 }
@@ -262,7 +266,10 @@ footer{
 .talents{
     grid-area: talents;
 }
-#nav-home-tab, #nav-profile-tab{
+.skills{
+    grid-area: skills;
+}
+#nav-talent1-tab, #nav-talent2-tab{
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
@@ -272,3 +279,123 @@ footer{
 #override{
     border: none;
 }
+.synergy{
+    grid-area: synergy;
+    display: grid;
+    grid: "synhead" 65px
+          "card1"   min-content
+          " . "     16px
+          "card2"   min-content
+          " . "     16px
+          "card3"   min-content
+          " . "     16px
+          "card4"   min-content
+          " . "     16px
+          "card5"   min-content
+          " . "     16px
+          "card6"   min-content/
+          1fr;
+
+}
+.synhead{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 24px;
+    font-variant: small-caps;
+    color: #898989;
+    grid-area: synhead;
+}
+.tester{
+    grid-area: synhead;
+    width: 1054px;
+    height: 1px;
+    background: #333333;
+    margin-top: 40px;
+}
+.synergypfp{
+    height: 64px;
+    width: 64px;
+    margin-top: 24px;
+    margin-left: 24px;
+    grid-area: namestuff;
+}
+#secondsynpfp{
+    height: 64px;
+    width: 64px;
+    margin-top: 24px;
+    margin-left: 104px;
+    grid-area: namestuff;
+}
+.card1{
+    grid-area: card1;
+    background: #262626;
+    display: grid;
+    grid: "namestuff" 104px
+          "textual"   min-content /
+          1fr
+}
+.card2{
+    grid-area: card2;
+    background: #262626;
+    display: grid;
+    grid: "namestuff" 104px
+          "textual"   min-content /
+          1fr
+}
+.card3{
+    grid-area: card3;
+    background: #262626;
+    display: grid;
+    grid: "namestuff" 104px
+          "textual"   min-content /
+          1fr
+}
+.card4{
+    grid-area: card4;
+    background: #262626;
+    display: grid;
+    grid: "namestuff" 104px
+          "textual"   min-content /
+          1fr
+}
+.card5{
+    grid-area: card5;
+    background: #262626;
+    display: grid;
+    grid: "namestuff" 104px
+          "textual"   min-content /
+          1fr
+}
+.card6{
+    grid-area: card6;
+    background: #262626;
+    display: grid;
+    grid: "namestuff" 104px
+          "textual"   min-content /
+          1fr
+}
+.namestuff{
+    grid-area: namestuff;
+}
+.textual{
+    grid-area: textual;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color:#F2F2F2;
+    margin-left:24px;
+    margin-right:24px;
+    margin-bottom:24px;
+}
+.synname, .synlevel{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
